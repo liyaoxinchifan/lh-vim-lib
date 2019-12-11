@@ -66,7 +66,7 @@ function! lh#coc#_split_open(...) abort
   endif
   call s:Verbose('files: %1', files)
 
-  if lh#buffer#jump(files[0], 'sp') > 0 && exists('where')
+  if lh#buffer#jump(files[0], 'vsp') > 0 && exists('where')
     exe where
   endif
 endfunction
